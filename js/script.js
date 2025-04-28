@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupSmoothScroll();
   setupNavbarScroll();
   setupDarkMode();
+  setupMenuToggle(); // <== Tambahkan ini
   revealOnScroll(); // Jalankan saat load pertama
   setupContactForm();
 });
@@ -49,6 +50,18 @@ function setupDarkMode() {
   });
 }
 
+// Fungsi: Toggle Menu untuk responsif
+function setupMenuToggle() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navItems = document.getElementById('nav-items');
+
+  if (!menuToggle || !navItems) return;
+
+  menuToggle.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+  });
+}
+
 // Fungsi: Reveal animasi saat elemen masuk viewport
 function revealOnScroll() {
   const reveals = document.querySelectorAll('.reveal');
@@ -77,4 +90,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
+// Fungsi: Setup Form Kontak
+function setupContactForm() {
+  // Kamu bisa isi ini sesuai fitur EmailJS atau apapun nanti.
+}
