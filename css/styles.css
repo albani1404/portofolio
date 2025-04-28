@@ -64,7 +64,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('assets/gambar1.jpg') no-repeat center center/cover;
+  background: url('../assets/gambar1.jpg') no-repeat center center/cover;
   background-color: #e9edff;
   text-align: center;
   color: rgb(91, 98, 114);
@@ -147,7 +147,7 @@ body {
   padding: 4rem 2rem;
   text-align: center;
 }
-.title{
+.title {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
@@ -254,7 +254,6 @@ footer {
   background: #1e3a8a;
   transition: width 1.5s ease-in-out;
 }
-
 
 .social-icons {
   display: flex;
@@ -391,7 +390,7 @@ footer {
   padding: 2rem;
   justify-content: space-between;
   max-width: 2000px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -459,7 +458,7 @@ footer {
   font-size: 0.9rem;
   font-weight: 500;
   margin-bottom: 0.3rem;
- color: #b1bfd4;
+  color: #b1bfd4;
 }
 
 .progress-bar {
@@ -510,6 +509,7 @@ footer {
   margin-bottom: 2rem;
 }
 
+/* kontak */
 
 /* Font Awesome (untuk ikon) */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');

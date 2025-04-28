@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Albani</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <link
+    href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+    rel="stylesheet"
+    type="text/css"
+  
   </head>
   <body>
     <header class="navbar">
@@ -31,11 +37,12 @@
 
     <section id="hero" class="hero-section">
       <div class="hero-content">
-        <h2>Halo, saya Albani</h2>
-        <p>
-          Hi! I'm <strong>Ahmad Albani Islami</strong>, a passionate <strong>Junior Machine Learning Engineer</strong> focused on building smart, data-driven solutions. 
-          I enjoy working with data, training models, and deploying machine learning systems into real-world applications.
-        </p>
+        <h2>Hallo, I'm Ahmad Albani Islami</h2>
+       <!-- <p>
+  Hi! I'm <strong>Ahmad Albani Islami</strong>, a passionate <strong>Junior Machine Learning Engineer</strong>.<br>
+  I focus on building smart, data-driven solutions and enjoy working with data and training models.<br>
+  I'm also experienced in deploying machine learning systems into real-world applications.
+</p> -->
         <a href="https://docs.google.com/document/d/1WT28iEnTAmX8JE72FX0wIFTbPJhe13Fq/edit" class="btn-primary">Download Resume</a>
       </div>
     </section>
@@ -221,21 +228,22 @@
     
         <!-- Form Kontak -->
         <div class="contact-form">
-          <form action="#">
+          <form id="contact-form">
             <label for="name">Nama Lengkap</label>
-            <input type="text" id="name" placeholder="Masukkan nama Anda" required>
-    
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required />
+          
             <label for="email">Alamat Email</label>
-            <input type="email" id="email" placeholder="email@contoh.com" required>
-    
+            <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
+          
             <label for="subject">Subjek</label>
-            <input type="text" id="subject" placeholder="Tentang apa yang ingin dibahas?" required>
-    
+            <input type="text" id="subject" name="subject" placeholder="Tentang apa yang ingin dibahas?" required />
+          
             <label for="message">Pesan Detail</label>
-            <textarea id="message" rows="4" placeholder="Deskripsikan kebutuhan Anda..." required></textarea>
-    
+            <textarea id="message" name="message" rows="4" placeholder="Deskripsikan kebutuhan Anda..." required></textarea>
+          
             <button type="submit">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
           </form>
+          
         </div>
       </div>
     </section>
